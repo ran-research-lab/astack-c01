@@ -26,12 +26,12 @@ int passedAssertions  = 0;
 int main() {
 	AStack S(20);
 	for(int i = 0; i < 10; i++) S.push(i*10);
-    expect( S.toString() == "90 80 70 60 50 40 30 20 10 0 ");
-    int ctr = 0;
-    while(!S.isEmpty()) {
-        S.pop();
-        ctr++;
-    }
-    expect( ctr == 10);
-    assertionReport();
+  expect( S.toString() == "90 80 70 60 50 40 30 20 10 0 ");
+  int ctr = 0;
+  while(!S.isEmpty()) {
+      S.pop();
+      ctr++;
+  }
+  expect( ctr == 10);
+  assertionReport();
 }
